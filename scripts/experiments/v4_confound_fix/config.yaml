@@ -1,0 +1,16 @@
+status: ready
+notes: >
+  Retrain on the confound-fixed dataset (see results/source_confound_scoping.md
+  and implementation_plan.md Phases 1-5). Uses data/dataset_resplit.yaml:
+  grouped/dedup'd/source+class-stratified 80/10/10 split, curated images
+  resolution-jittered (no more fixed 400x400), background negatives +
+  background-swap augmentation for Algal spot/Other added to train, EXIF
+  camera tags stripped. Run analysis/dataset/phase1-5 scripts first if
+  data/dataset_resplit.yaml doesn't exist yet.
+
+model: yolo11m-obb.pt
+data: data/dataset_resplit.yaml
+epochs: 500
+imgsz: 640
+batch: 16
+patience: 50

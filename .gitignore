@@ -1,0 +1,67 @@
+# ── Large data files — keep on Drive ──────────────────────────────────
+data/datasetv3_2/
+data/datasetv3_2_resplit
+data/*.zip
+test_images
+
+# ── Model weights — keep on Drive ──────────────────────────────────────
+*.pt
+*.onnx
+*.engine
+*.tflite
+*.pb
+models/*
+!models/.gitkeep
+
+# ── Cloud/local training outputs ───────────────────────────────────────
+runs/
+CLAUDE.md
+
+# ── Local experiment outputs — generated, not source ──────────────────
+analysis/gradcam/outputs/
+analysis/evaluation/outputs/
+analysis/dataset/outputs/
+analysis/*/outputs/
+analysis/notebooks/outputs/
+
+# ── Scratch — one-off/throwaway files, not part of the tracked pipeline ─
+scratch/
+
+# ── Jupyter ────────────────────────────────────────────────────────────
+# Notebooks are paired with jupytext (ipynb,py:percent) -- the .py sibling
+# in notebooks/ is the versioned source of truth (readable diffs, no output
+# noise); the .ipynb is a local build artifact, still needed to actually
+# open/run/upload the notebook (Jupyter, VS Code, Colab), just not tracked.
+# Regenerate a missing .ipynb with `jupytext --sync notebooks/<name>.py`.
+*.ipynb
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+jupytext.toml
+
+# ── Python ────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+yolo-env/
+*.egg-info/
+
+# ── OS ────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Editor swap/backup files ──────────────────────────────────────────
+# Not hypothetical: src/.obb_common.py.swp was committed by accident and had
+# to be removed later. Vim writes .<name>.swp beside the file being edited,
+# which lands right next to tracked source and is easy to `git add -A` in.
+*.swp
+*.swo
+*.sw[a-p]
+*~
+.*.sw[a-p]
+
+# ── Cache ────────────────────────────────────────────────────────────
+*.cache
+.cache/
+ultralytics/
