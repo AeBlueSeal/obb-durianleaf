@@ -1,6 +1,6 @@
-# DurianTemp
+# Rotation-Aware Detection of Durian Leaf Diseases Using YOLO-OBB Under Natural Orchard Conditions
 
-DurianTemp is a computer-vision research project for developing and evaluating
+Rotation-Aware Detection of Durian Leaf Diseases Using YOLO-OBB Under Natural Orchard Conditions is a computer-vision research project for developing and evaluating
 object-detection models. The repository brings together dataset utilities,
 training and inference scripts, experiment configurations, analysis tools, and
 notebooks used throughout the machine-learning workflow.
