@@ -5,7 +5,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c.svg)](https://pytorch.org/)
 [![Ultralytics](https://img.shields.io/badge/Ultralytics-YOLO11%20%2F%20YOLO26-00FFFF.svg)](https://github.com/ultralytics/ultralytics)
 [![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
-
+[![Google Play](https://img.shields.io/badge/Google%20Play-YOEDO%20App-34A853?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.cateatmars_dev.yoedodurian)
 
 ---
 
@@ -61,6 +61,25 @@ Averaged across 9 folds, E-IRFS selectively channels representation capacity to 
 * **Anthracnose** ($n=60$): **+0.015 AP@50:95** gain.
 
 ---
+---
+
+## Mobile Field Deployment: YOEDO (Durian Leaf Scanner)
+
+To bridge academic research with practical agricultural applications in Thai orchards, the trained models have been ported and deployed as an Android mobile application: **YOEDO: Durian Leaf Scanner** (available on Google Play Store).
+
+<p align="center">
+  <a href="https://play.google.com/store/apps/details?id=com.cateatmars_dev.yoedodurian">
+    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="80">
+  </a>
+</p>
+
+### Key Mobile Capabilities:
+* **Real-Time On-Device Inference:** Powered by quantized lightweight edge models (`.tflite` / FP16 / INT8), enabling real-time leaf scanning directly through the smartphone camera feed without noticeable lag.
+* **100% Offline Functionality:** Designed specifically for remote orchard environments where cellular connectivity is unstable or unavailable. All model computations run entirely locally on the device's edge NPU/GPU.
+* **Instant In-Field Diagnosis:** Delivers live oriented bounding box overlays, diagnostic confidence scores, and multi-disease identification across the 7 target categories (including *Phytophthora*, *Rhizoctonia*, and *Algal Spot*).
+* **Grower-Centric UI:** Provides clean visual feedback to assist farm scouts and growers in early disease detection and targeted canopy pruning.
+
+**Download on Google Play:** [YOEDO: Durian Leaf Scanner](https://play.google.com/store/apps/details?id=com.cateatmars_dev.yoedodurian)
 
 ## Dataset & Annotation Protocol
 
@@ -119,6 +138,7 @@ obb-durianleaf/
 ```
 
 ---
+
 
 ## Getting Started
 
