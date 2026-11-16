@@ -12,7 +12,7 @@ Code accompanying the manuscript *Rotation-Aware Detection of Durian Leaf Diseas
 
 ## Overview
 
-Durian is Thailand's most valuable fruit export, and leaf disease is currently assessed by walk-through visual inspection of individual trees. Automatic detection of diseased leaves in the field is difficult. Durian leaves are long and narrow, lie at every angle and overlap against cluttered backgrounds, and axis-aligned boxes around such leaves enclose large areas of background and neighbouring leaves.
+Durian is Thailand's most valuable fruit export, and leaf disease is currently assessed by walk-through visual inspection of individual trees. Automatic detection of diseased leaves in the field is difficult. Durian leaves are long and narrow, lie at every angle and overlap against cluttered backgrounds, and axis-aligned boxes around such leaves enclose large areas of background and neighboring leaves.
 
 This study evaluates rotation-aware detection with oriented bounding boxes (OBB) for this task:
 
